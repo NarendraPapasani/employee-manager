@@ -1,7 +1,7 @@
 # Employee Directory Web Interface
 
 A modern, responsive web application for managing employee information built with HTML, CSS, JavaScript, and Freemarker templates. This application provides a complete employee management system with features like searching, filtering, sorting, and pagination.
-
+Deployed Link : https://gorgeous-puppy-9ae614.netlify.app/
 ## 🚀 Features
 
 ### Core Functionality
