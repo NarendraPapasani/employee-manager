@@ -1,0 +1,317 @@
+/* Responsive Design */
+
+/* Tablet Styles */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .header {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  .controls {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: stretch;
+  }
+
+  .search-container {
+    max-width: none;
+  }
+
+  .filter-sort-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .employee-list {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .pagination-container {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: stretch;
+  }
+
+  .pagination-controls {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .pagination-buttons {
+    justify-content: center;
+  }
+
+  .filter-form {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-actions {
+    justify-content: center;
+  }
+
+  .modal-content {
+    margin: 1rem;
+    width: calc(100% - 2rem);
+  }
+
+  .form-container {
+    margin: 1rem;
+    width: calc(100% - 2rem);
+    max-height: calc(100vh - 2rem);
+  }
+
+  .employee-card {
+    padding: 1rem;
+  }
+
+  .employee-info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .employee-actions {
+    justify-content: center;
+  }
+
+  .btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.85rem;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  .header {
+    padding: 0.75rem 0;
+  }
+
+  .header h1 {
+    font-size: 1.3rem;
+  }
+
+  .dashboard {
+    padding: 1rem;
+  }
+
+  .employee-card {
+    padding: 0.75rem;
+  }
+
+  .employee-name {
+    font-size: 1.1rem;
+  }
+
+  .employee-details p {
+    font-size: 0.85rem;
+  }
+
+  .employee-actions {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .employee-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .form-container {
+    padding: 1rem;
+  }
+
+  .form-header h2 {
+    font-size: 1.2rem;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .form-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .modal-actions {
+    flex-direction: column;
+  }
+
+  .modal-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .pagination-buttons {
+    flex-wrap: wrap;
+  }
+
+  .page-numbers {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .search-input {
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+
+  .btn {
+    min-height: 44px; /* Better touch target */
+  }
+
+  .filter-panel {
+    padding: 1rem;
+  }
+
+  .sort-select,
+  .items-per-page {
+    width: 100%;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 320px) {
+  .header h1 {
+    font-size: 1.1rem;
+  }
+
+  .employee-card {
+    padding: 0.5rem;
+  }
+
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  .form-container {
+    padding: 0.75rem;
+  }
+
+  .modal-content {
+    padding: 1rem;
+  }
+}
+
+/* Landscape orientation adjustments */
+@media (max-height: 500px) and (orientation: landscape) {
+  .employee-form {
+    padding: 1rem;
+  }
+
+  .form-container {
+    max-height: 95vh;
+  }
+}
+
+/* Print styles */
+@media print {
+  .header-actions,
+  .controls,
+  .employee-actions,
+  .pagination-container,
+  .btn {
+    display: none !important;
+  }
+
+  .employee-card {
+    break-inside: avoid;
+    box-shadow: none;
+    border: 1px solid #ccc;
+  }
+
+  .employee-list {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+
+  body {
+    background: white;
+  }
+
+  .dashboard {
+    box-shadow: none;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .btn-primary {
+    background: #000;
+    border: 2px solid #000;
+  }
+
+  .btn-secondary {
+    background: #666;
+    border: 2px solid #666;
+  }
+
+  .employee-card {
+    border: 2px solid #000;
+  }
+
+  .search-input,
+  .sort-select,
+  .form-group input,
+  .form-group select {
+    border: 2px solid #000;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .spinner {
+    animation: none;
+  }
+}
+
+/* Focus styles for accessibility */
+@media (prefers-reduced-motion: no-preference) {
+  .btn:focus,
+  .search-input:focus,
+  .sort-select:focus,
+  .form-group input:focus,
+  .form-group select:focus {
+    outline: 2px solid #667eea;
+    outline-offset: 2px;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1400px;
+  }
+
+  .employee-list {
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  }
+
+  .controls {
+    max-width: 800px;
+    margin: 0 auto 2rem auto;
+  }
+}

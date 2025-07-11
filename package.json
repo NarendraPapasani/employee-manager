@@ -1,0 +1,35 @@
+{
+  "name": "employee-directory",
+  "version": "1.0.0",
+  "description": "A modern, responsive web application for managing employee information",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8080 || python3 -m http.server 8080",
+    "dev": "npx live-server --port=8080 --open=index.html",
+    "build": "echo 'No build process needed for this static application'",
+    "test": "echo 'No tests specified'"
+  },
+  "keywords": [
+    "employee",
+    "directory",
+    "management",
+    "html",
+    "css",
+    "javascript",
+    "freemarker",
+    "responsive"
+  ],
+  "author": "Employee Directory Team",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-username/employee-directory.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/employee-directory/issues"
+  },
+  "homepage": "https://github.com/your-username/employee-directory#readme"
+}
