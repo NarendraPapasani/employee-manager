@@ -23,12 +23,11 @@
   [headers.values]
     Cache-Control = "public, max-age=31536000"
 
-# Handle client-side routing (if needed)
+# Handle client-side routing (SPA fallback)
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
-  conditions = {Role = ["user"], Country = ["US"]}
 
 # Basic redirects for clean URLs
 [[redirects]]
